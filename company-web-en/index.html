@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>HOBBY FOR FUN</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+		<script src="js/jquery.min.js"></script>
+		 
+			<script src="js/vue.js"></script>
+		<script src="js/axios.min.js"></script>
+		  <script src="js/main.js"></script>
+		  <script src="js/swiper.min.js"></script>
+		 
+		
+		 
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles1.css" rel="stylesheet" />
+		<link href="css/my1.css" rel="stylesheet" />
+		<link href="css/swiper.min.css" rel="stylesheet"/>
+	
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+		<div id="app">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+				<div class="navbar-brand">
+					<a href="index.html"><img src="assets/img/pc/logo_pc_navigation.png"  style="width: 92px;"/></a>
+				</div>
+				
+         <!--       <a class="navbar-brand" href="#page-top">Start Bootstrap</a> -->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Products & Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cooperation.html">Contact & Cooperation</a></li>
+						  <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+		
+        <section class="about-section" id="about" style="margin-top:72px;">
+			<img src="assets/img/pc/model_pc_index.png" style="width: 700px;background:transparent;position: absolute;top:10px;right:0px;"/>
+            <div class="container">
+				 
+                <div class="d-flex justify-content-center" style="float:left;margin-bottom: 50px;">
+				
+                    <div >
+						 <div class="text1" style="margin-top:130px;">HOBBY FOR FUN</div>
+						 <div style="display: flex;align-items: center;">
+						 <div style="width: 20px;display: flex;align-items:center;justify-content: center;flex-direction: column;">
+							 <div  :class='["point",contentIndex==0?"point-active":""]' @click="scrollToIndex(0)"></div>
+							 <div class="line"></div>
+							 <div :class='["point",contentIndex==1?"point-active":""]'  @click="scrollToIndex(1)"></div>
+							 <div class="line" ></div>
+							 <div :class='["point",contentIndex==2?"point-active":""]' @click="scrollToIndex(2)"></div>
+						 </div>
+						 <div class="swiper-container" style="height: 260px;">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" data-swiper-autoplay="10000">
+									<div  style="margin-left: 20px;display: flex;flex-direction: column;justify-content: center;height: 250px;width: 800px;">
+									<img src="assets/img/pc/logo_pc_brand.png" style="width: 113px;margin-left:10px;"/>
+									 <div class="text2" style="margin-top:10px;margin-bottom: 20px;" >YiFang Hobby for Fun</div>
+									  <div class=" text3" style="width: 638px;">Make Magic Factory Products carriers of its essence and fun;
+Let customers gain knowledge and fun during modeling,being immersed in the joy of brand-new building experience. </div>
+								</div>
+								</div>
+								
+								<div class="swiper-slide" data-swiper-autoplay="10000">
+									<div  style="margin-left: 20px;display: flex;flex-direction: column;justify-content: center;height: 250px;width: 800px;">
+										<div class="text4">ABOUT COMPANY</div>
+										 <!--  <div class="text5"  style="margin-bottom: 10px;">ABOUT COMPANY </div> -->
+										  <div class="text3"style="width: 720px;margin-bottom:20px;">YiFang Fun (Shenzhen) Technology Co., Ltd. was established in March 2021. The company is composed of professional Internet and AR technical experts, top trendy toy design team, graphic design team and a professional mold manufacturing factory with leading technology.
+															</div>
+															<div class="text3" style="width: 720px;">
+															The company is committed to the design and production of new trendy cement-free construction toys designed by Augmented Reality technology and advanced mold manufacturing technology; it is built around four areas of IP cooperative operation, consumer reach, popular culture promotion and cultivation, to make a new integrated operation platform for trendy toys.</div>
+										
+										</div>
+									
+									</div>
+									
+									
+									
+									
+									
+									<div class="swiper-slide" data-swiper-autoplay="10000">
+										<div  style="margin-left: 20px;display: flex;flex-direction: column;justify-content: center;height: 250px;width: 800px;">
+											<div class="text4">Company Culture</div>
+											   <!-- <div class="text5"  style="margin-bottom: 10px;">CULTURE </div> -->
+											   <div class="text3" style="width: 720px;margin-bottom:20px;">The Company philosophy "Hobby for Fun" guides us to make products admixtures of YiFang essence and fun,letting customers gain knowledge and joy from the process of building YIFANG models and being immersed in the brand-new joyful experience brought by YIFANG products.  </div>
+											 					<div class="text3" style="width: 720px;">
+										The company combines manual assembly with AR technology and creates new trendy toys. The sensory experience of product use is enhanced further by interesting building, collection, education and social interactions in modern life.	 </div>
+											
+											</div>
+											
+											</div>
+								
+								
+								
+								
+							</div>
+							 </div>
+						<!-- <div  v-if="contentIndex==0" style="margin-left: 20px;display: flex;flex-direction: column;justify-content: center;height: 250px;">
+                     <img src="assets/img/pc/logo_pc_brand.png" style="width: 113px;margin-left:10px;"/>
+					  <div class="mx-auto text2" style="margin-top:10px;margin-bottom: 20px;" >亿方汇趣，汇趣一方</div>
+                        <div class=" mx-auto text3" style="width: 438px;">将一方产品转化为承载亿方思想与乐趣的实际载体；使亿方消费者在使用过程中收获知识与快乐，沉浸于亿方产品所带来的全新制作体验的喜悦之中</div>
+                   </div>
+				   
+				   <div  v-else-if="contentIndex==1" style="margin-left: 20px;display: flex;flex-direction: column;justify-content: center;height: 250px;">
+				  
+				  <div class="text4">关于公司</div>
+				     <div class="text5"  style="margin-bottom: 10px;">ABOUT COMPANY </div>
+				    <div class="text3"style="width: 420px;">亿方汇趣（深圳）科技有限公司成立于2021年3月，公司由专业互联网及AR技术专家、顶级潮流玩具设计团队、平面设计团队结合技术领先的模具制造专业工厂所组成。 
+					</div>
+					<div class="text3" style="width: 420px;">
+					公司致力于设计及生产结合增强现实(Augmented Reality)技术与先进模具制造技术所设计的全新免胶拼装潮流玩具；围绕IP合作运营、消费者触达以及潮玩文化推广与培育四个领域，构建全新的潮流玩具综合运营平台。</div>
+				 
+				  
+				   </div>
+				   
+				   
+				   <div  v-else-if="contentIndex==2" style="margin-left: 20px;display: flex;flex-direction: column;justify-content: center;height: 250px;">
+				   
+				   <div class="text4">企业文化</div>
+				      <div class="text5"  style="margin-bottom: 10px;">CULTURE </div>
+				     <div class="text3" style="width: 420px;">公司理念：“亿方汇趣，汇趣一方（Hobby for Fun)”将一方产品转化为承载亿方思想与乐趣的实际载体；使亿方消费者在使用过程中收获知识与快乐，沉浸于亿方产品所带来的全新制作体验的喜悦之中。 </div>
+				   					<div class="text3" style="width: 420px;">
+				  公司产品将实际手工拼装与AR技术相结合，创造出全新的潮流玩具将产品使用的感官体验进一步提升，始于现代生活的兴趣制作、收藏、教育及社交。</div>
+				   				 
+				   
+				   
+				   </div> -->
+				   
+				   </div>
+				   </div>
+				     </div>
+				   <div style="width: 100%;display: flex;justify-content: center;height: 250px;align-items: center;">
+                            <img src="assets/img/pc/ic_slide_pc_index.png"  style="width: 20px;" @click="scroll()"/>
+							 </div>
+							 <div style="width: 100%;display: flex;justify-content: center;">
+					  <div  style="width:960px;height: 1378px;background: linear-gradient(360deg, #151822 0%, #1D181B 100%);border-radius: 16px; display: flex;flex-direction: column;align-items: center;" >
+						 
+						  <div class="mx-auto text2" class="text-center" style="margin-top:50px;">The Brand</div>
+						    <!-- <div class="mx-auto text6" class="text-center">SUB-BRAND</div> -->
+							 <div style="display: flex;justify-content: space-around;align-items: center;width: 100%;padding:30px;">
+							 
+							 <img src="assets/img/pc/product.jpg" style="width: 437px;height: 273px;background: #D8D8D8;border-radius: 16px;" />
+						     
+							 <div>
+							 <img src="assets/img/pc/logo_pc_index.png" style="width: 113px"/>
+							 <div class=" mx-auto title-detail" style="width: 333px;">Magic Factory is a brand under YiFang Fun (Shenzhen)Technology Co., Ltd.It is composed of a mature trendy toy design team,an experienced engineering team and a professional innovative IT team.The brand developes precise models by high tech and innovation,upgragtes customers' enjoyment in modelling to a higher end,and motivates customers to share with each other in the circle, moving customers' self-enjoyment to group-enjogyment.We are a factory producing fun.</div>
+						</div>
+						</div>
+						<div style="display: flex;justify-content: space-around;align-items: center;width: 100%;padding:30px;">
+							 
+						
+						     
+							 <div>
+							 
+							 <div class=" mx-auto title-detail" style="width: 343px;"> Magic Factory locates in the core of Greater Bay Area,having rich developing experience,high production techniques and advanced supporting facilities.Our products are developed with supports from official entities and authorative data, thus having features of precise,rich details, easy fitting and interesting.</div>
+							</div>
+							 <img src="assets/img/pc/img02_pc_brand.png" style="width: 437px;height: 273px;background: #D8D8D8;border-radius: 16px;" />
+						</div>
+						
+						
+						
+						<div style="display: flex;justify-content: space-around;align-items: center;width: 100%;padding:30px;">
+							 
+						<img src="assets/img/pc/img03_pc_brand.png" style="width: 437px;height: 273px;background: #D8D8D8;border-radius: 16px;" />
+						     
+							 <div>
+							 
+							 <div class=" mx-auto title-detail" style="width: 333px;">With high-tech and strong developing capability, Magic Factory will enable customers to upgrate their experience in modelling. We have AR engine and created our own App "Magic Factory AR" which provides costmers with brand-new AR interaction with real models,vedio instructions for assembly and others interesting.</div>
+							 
+						</div>
+						
+					  </div>
+					
+					  </div>
+					  
+					  </div>
+					   <img src="assets/img/pc/slogan_pc_brand.png" style="width: 909px;margin-top:-20px;margin-bottom: 100px;margin-left:150px;" />
+					                  
+					</div>
+					
+          
+        </section>
+        <!-- About-->
+        <section class="product-section text-center" id="projects">
+            <div  style="background-color: #0D0E14; " >
+                <div style="display: flex;justify-content: center;flex-direction: column;">
+                   
+                        <div class="title " style="margin-top:60px;">Products & Services</div>
+						<div class="title-en mb-5"> </div>
+						
+						 
+						 <div style="display: flex;justify-content: center;">
+						 <div style="width:480px;border-top:1px solid #aaa;height: 290px;display: flex;flex-direction: column;justify-content: space-around;padding:40px 0;">
+							 <div style="display: flex;align-items: center;" >
+								<!-- <div style="bor --><!-- der-radius:20px;width: 20px;height: 20px;overflow: hidden;"> -->
+								 <div style="width:60px;height: 50px;display: flex;justify-content: center;align-items: center;">
+									 <div style=" overflow:hidden;border-radius:50%;width: 36px;height: 36px;border: 4px solid ;"></div>
+								 </div>
+							      <!-- </div> -->
+								  <div class="title1" >Product Reseach & Design </div>
+							 </div>
+							 <div style="display: flex;align-items: center;" >
+							 								<!-- <div style="bor --><!-- der-radius:20px;width: 20px;height: 20px;overflow: hidden;"> -->
+							 								 <div style="width:50px;height: 8px;display: flex;justify-content: center;">
+															 <div style=" overflow:hidden;border-radius:50%;width: 8px;
+height: 8px;
+background: linear-gradient(180deg, #6CC7F4 0%, #F498F8 100%);"></div>
+</div>
+							      <!-- </div> -->
+							 								  <div class="title2">Model Kit Mass Production OEM</div>
+							 </div>
+							 
+							 
+							 
+							 <div style="display: flex;align-items: center;" >
+							 							 								<!-- <div style="bor --><!-- der-radius:20px;width: 20px;height: 20px;overflow: hidden;"> -->
+							 							 								 <div style="width:50px;height: 8px;display: flex;justify-content: center;">
+							 															 <div style=" overflow:hidden;border-radius:50%;width: 8px;
+							 height: 8px;
+							 background: linear-gradient(180deg, #6CC7F4 0%, #F498F8 100%);"></div>
+							 </div>
+							 							      <!-- </div> -->
+							 							 								  <div class="title2" >Physical and On-line Stores</div>
+							 							 </div>
+							 
+							 
+							 
+							 
+							 
+						 </div>
+						 
+						 
+						 
+						 
+						 <div style="width:480px;border-top:1px solid #aaa;height: 290px;display: flex;flex-direction: column;justify-content: space-around;padding:40px 0;">
+						 							 <div style="display: flex;align-items: center;" >
+						 								<!-- <div style="bor --><!-- der-radius:20px;width: 20px;height: 20px;overflow: hidden;"> -->
+						 								 <div style="width:60px;height: 50px;display: flex;justify-content: center;align-items: center;">
+						 									 <div style=" overflow:hidden;border-radius:50%;width: 36px;height: 36px;border: 4px solid ;"></div>
+						 								 </div>
+						 							      <!-- </div> -->
+						 								  <div class="title1" >Culture Promotion</div>
+						 							 </div>
+						 							 <div style="display: flex;align-items: center;" >
+						 							 								<!-- <div style="bor --><!-- der-radius:20px;width: 20px;height: 20px;overflow: hidden;"> -->
+						 							 								 <div style="width:50px;height: 8px;display: flex;justify-content: center;">
+						 															 <div style=" overflow:hidden;border-radius:50%;width: 8px;
+						 height: 8px;
+						 background: linear-gradient(180deg, #6CC7F4 0%, #F498F8 100%);"></div>
+						 </div>
+						 							      <!-- </div> -->
+						 							 								  <div class="title2" >AR Products and APP Development</div>
+						 							 </div>
+						 							 
+						 							 
+						 							 
+						 							 <div style="display: flex;align-items: center;" >
+						 							 							 								<!-- <div style="bor --><!-- der-radius:20px;width: 20px;height: 20px;overflow: hidden;"> -->
+						 							 							 								 <div style="width:50px;height: 8px;display: flex;justify-content: center;">
+						 							 															 <div style=" overflow:hidden;border-radius:50%;width: 8px;
+						 							 height: 8px;
+						 							 background: linear-gradient(180deg, #6CC7F4 0%, #F498F8 100%);"></div>
+						 							 </div>
+						 							 							      <!-- </div> -->
+						 							 							 								  <div class="title2" >Model Cultural Platforms Construction</div>
+						 							 							 </div>
+						 							 
+						 							 
+						 							 
+						 							 
+						 							 
+						 						 </div>
+						 						 
+												 
+												
+											</div>
+						 
+						
+						
+                       <!-- <p class="text-white-50">
+                            Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
+                            <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
+                            The theme is open source, and you can use it for any purpose, personal or commercial.
+                        </p> -->
+                   
+                </div>
+				
+            
+            </div>
+			 <div style="width: 100%;height: 320px;position: relative;overflow: hidden;" class="title-bg2" >
+				 <img src="./assets/img/pc/bg01_pc_product.png" style="width: 1515px;position: absolute;top:-120px;left:-650px;"/>
+				<div class="title" style="padding-top:150px;">ABOUT PRODUCT</div>
+				<!-- <div class="title-en">ABOUT PRODUCT</div> -->
+				 	 
+				
+			 </div>
+			 <div style="width: 100%;">
+			 <div  class="scroll-box">
+				<img src="./assets/img/pc/img01_pc_product.png" class="product">
+				<img src="./assets/img/pc/img02_pc_product.png" class="product">
+			 </div>
+			 <div  class="scroll-box">
+			 				<img src="./assets/img/pc/img03_pc_product.png" class="product">
+			 				<img src="./assets/img/pc/img04_pc_product.png" class="product">
+			 </div>
+			 <div  class="scroll-box">
+			 				<img src="./assets/img/pc/img05_pc_product.png" class="product">
+			 				<img src="./assets/img/pc/img06_pc_product.png" class="product">
+			 </div>
+			<!-- <div style="display: flex;align-items: center;"> -->
+			 			<!-- <img src="assets/img/mobile/ic_mob_product.png" style="width: 18px;height: 20px;margin:10px;"/> -->
+			           <!--  <div style="font-size: 12px;font-family: Helvetica;color: rgba(255, 255, 255, 0.7);line-height: 14px;">左滑查看更多</div> -->
+<!-- 			 </div> -->
+			 </div>
+			 <div style="width: 100%;display: flex;flex-direction: column;position: relative;overflow: hidden;height: 560px;margin:auto;align-items: center;" >
+			<div style="width: 960px;display: flex;flex-direction: column;">
+			 <img src="assets/img/pc/logo_pc_product.png" style="width: 283px;float:left;margin-bottom: 20px;margin-top:40px;"/>
+			 <img src="assets/img/pc/name_pc_product.png" style="width: 882px;margin-bottom: 30px;"/>
+			 <div style="width: 649px;text-align: left;
+height: 64px;
+font-size: 20px;
+font-family: NotoSansCJKsc-Regular, NotoSansCJKsc;
+font-weight: 400;
+color: rgba(255, 255, 255, 0.7);
+line-height: 32px;">The HLV Long March 5B, licensed by and launched under cooperation with CASCI, perfectly reproduced the shape and real details of the rocket, the segmented structure make it easier to learn aerospace knowlege.</div>
+</div>
+       <img src="assets/img/pc/bg02_pc_product.png" style="width:1515px;position: absolute;top:60px;right: -720px;"/>
+			</div>
+			
+		     <div style="display: flex;width: 100%;justify-content: center;align-items: center;
+background: linear-gradient(180deg, #121212 0%, #000000 100%);height: 806px;overflow: hidden;">
+				 <img src="assets/img/pc/img_pc_app.png" style="width: 528px;margin-top:230px;margin-right: 20px;
+				"/>
+				 <div style="display: flex;flex-direction: column;justify-content: center;">
+			  <img src="assets/img/pc/logo_pc_app.png" style="width: 194px;margin-bottom: 10px;margin-top:30px;"/>
+			  <div style="width: 382px;text-align: left;
+height: 122px;
+font-size: 48px;
+font-family: NotoSansCJKsc-Black, NotoSansCJKsc;
+font-weight: 900;
+color: #FFFFFF;
+line-height: 61px;">Magic factory AR Engine</div>
+			  <div style="width: 500px;
+text-align: left;
+margin-top:30px;
+font-size: 20px;
+font-family: NotoSansCJKsc-Regular, NotoSansCJKsc;
+font-weight: 400;
+color: rgba(255, 255, 255, 0.7);
+line-height: 32px;">Our company has rights to use the Valkyrie Engine server and mobile terminal. The engine has top performance and is able to achieve the first-class AR experience in the current mobile terminal. The AR material developed by this engine makes the corresponding product untraditional,technological,interesting and promotional, which is a "multiplier" of product value.</div>
+      <div style="display: flex;align-items: center;margin-bottom: 20px;margin-top:50px;">
+		  <div class="hover">
+			  <img src="assets/img/pc/tag_pc_app.png" style="width: 153px;
+height: 43px;
+"/>
+</div>
+		
+		  <div class="btn-right hover" style="margin-left:30px;">
+			 Download Now
+		  </div>
+	  </div>
+	  </div>
+	
+</div>
+		</section>
+        <!-- Projects-->
+       
+        <!-- Signup-->
+     
+        <!-- Contact-->
+        <section class="contact-section " id="contact">
+            <div style="display: flex;justify-content: center;align-items: center;height: 100%;margin: auto;">
+				<div style="height: 200px;">
+              <img src="assets/img/pc/logo_pc_footer.png" style="width: 175px;"/>
+			  </div>
+			  <div style="display: flex;flex-direction: column;justify-content: space-between;height: 200px;margin-left:120px;">
+			  <div style="display: flex;">
+				  <img src="assets/img/pc/wechat_pc_footer.png" style="height:30px ;margin-right: 30px;"/>
+				   <img src="assets/img/pc/weibo_pc_footer.png" style="height:30px ;margin-right: 30px;"/>
+				    <img src="assets/img/pc/instagram_pc_footer.png" style="height:30px ;margin-right: 30px;"/>
+					 <img src="assets/img/pc/facebook_pc_footer.png" style="height:30px ;margin-right: 30px;"/>
+					 	 <img src="assets/img/pc/twitter_pc_footer.png" style="height:30px ;margin-right: 30px;"/>
+			  </div>
+			
+			  <div style="display: flex;align-items: center;">
+               <div class="box-item hover">
+				   <a  href="recruit.html">Social Recruitment</a>
+				  <!-- <div>社会招聘</div> -->
+				
+			   </div>
+			   <div class="box-item" style="width: 1px;height: 20px;background-color: #fff;"></div>
+			    <div class="box-item hover">
+				
+					 <a  href="recruit.html" >School Recruitment</a>
+				
+				</div>
+				<div class="box-item" style="width: 1px;height: 20px;background-color: #fff;"></div>
+				 <div class="box-item hover" >
+					
+					  <a  href="cooperation.html" >Contact Us</a>
+					
+				 </div>
+			
+				 <div class="box-item" style="width: 1px;height: 20px;background-color: #fff;"></div>
+				  <div class="box-item hover" >
+				 	
+				 	  <a  href="privacy.html" >Privacy Policy</a>
+				 	
+				  </div>
+				
+				  <div class="box-item" style="width: 1px;height: 20px;background-color: #fff;"></div>
+				   <div class="box-item hover" >
+				  	
+				  	  <a  href="xieyi.html" > User Service Agreement</a>
+				  	
+				   </div>
+				   </div>
+				 <div style="display: flex;align-items: center;">
+				 				  <div class="box-item">Room 1001, Oriental  Plaza, Futian District, Shenzhen, Guangdong, China</div>
+								  <div class="box-item" style="width: 1px;height: 20px;background-color: #fff;"></div>
+				 				   <div class="box-item">bussiness@yffun.com</div>
+				 </div>
+				 <div style="display: flex;">
+				 				  	   <div class="box-item">
+										   <a  href="http://beian.miit.gov.cn" >ICP Registration No.粤ICP备2021108369号</a>
+										   </div>
+				 </div>
+            </div>
+        </section>
+		</div>
+        <!-- Footer-->
+		<!-- <footer  class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">广东省深圳市福田区东方新天地广场 1001 室</div></footer>
+		  <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">bussiness@yffun.com</div></footer>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &#169 2021 YIFANG FUN(SHENZHEN) Al --><!-- l Rights Reserved</div></footer> -->
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+		
+    </body>
+</html>

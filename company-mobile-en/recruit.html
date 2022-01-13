@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>亿方汇趣</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <script src="js/jquery.min.js"></script>
+         
+        	<script src="js/vue.js"></script>
+        <script src="js/axios.min.js"></script>
+          <script src="js/main.js"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+     <link href="css/styles.1234567.css" rel="stylesheet" />
+     <link href="css/my.1234567.css" rel="stylesheet" />
+	 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+		<div id="app">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="overflow: hidden;">
+			<div style="position: absolute;top:0%;left:0%;width: 100%;height:100%;z-index: -1;
+			 background: rgba(0, 0, 0, 0.8);overflow: hidden;"></div>	
+            <div class="container ">
+				<div class="navbar-brand">
+					<a href="index.html"><img src="assets/img/mobile/logo_mob_navigation.png"  style="width: 60px;"/></a>
+				</div>
+				
+         <!--       <a class="navbar-brand" href="#page-top">Start Bootstrap</a> -->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                   
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Products & Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cooperation.html">Contact & Cooperation</a></li>
+						  <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    </ul>
+					<div style="width: 100%;display: flex;justify-content: center;">
+						<button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+						   
+						  <img src="assets/img/mobile/ic_mob_footer.png" style="transform:rotate(-90deg);width: 24px;padding: 10px 0;"  />
+						</button>
+					
+					</div>
+					<div style="width: 100%;height:100vh;background: rgba(0, 0, 0, 0.65);"></div>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+		
+     <section  id="cooperation" style="background-color: #000000;">
+     			 <!-- <img src="assets/img/mobile/bg_mob_joinus.png" style="width:100%"/> -->
+     			 <div style="position: relative;">
+     			 		<img src="assets/img/mobile/bg_mob_joinus.png" style="width:100%"/>
+     			 		<div style="position:absolute;height: 100%;display: flex;flex-direction: column;justify-content: center;top:25px;left:24px;">
+     			 			<div class="header-title">JOIN US</div>
+     			 				<!-- <div class="header-title-en">JOIN US</div> -->
+     			 		</div>\
+						
+     			 </div>
+     			 <div style="display: flex;flex-wrap: wrap;justify-content: center;" class="re-box">
+     				 <div class="re-item" v-for="(item,qindex) in jobList">
+						 <img :src="item.bgsrc" style="position: absolute;height: 138px;right: 14px;"/>
+     					 <div class="item-title">
+     					 		{{item.title}}			 
+     					 </div>
+     					 <div class="item-price">
+     					 	{{item.price}}				 
+     					 </div>
+     					 <div class="item-tags" >
+     					 	<div class="item-tag" v-for="(item,tagindex) in item.tags">
+								<div v-if="tagindex==0" style="margin-right: 10px;">
+									{{item}}
+								</div>
+								<div v-else style="margin-right: 10px;">
+									{{item}}
+								</div>
+     					 					 
+     					 	</div>
+     				
+     										 
+     					 </div>
+     					 <div class="item-part">
+     					 		{{item.part}}		 
+     					 </div>
+     				 </div>
+     			 </div>
+     			 <div style="
+				            padding-top:40px;
+     			 			 width: 100%;
+							 display: flex;
+							 justify-content: center;
+     			 			 height: 20px;
+     			 			 font-size: 14px;
+							 text-align: center;
+							 flex-direction: column;
+							 align-items: center;
+     			 			 font-family: 'Noto Sans SC';
+     			 			 font-weight: bold;
+     			 			 color: #FFFFFF;
+     			 			 line-height: 20px;" class="mx-auto mb-3 mt-3" v-if="jobList.length>4&&show">
+							 
+     			 <div>MORE</div>
+     			  <img src="assets/img/mobile/ic_slide_pc_index.png" class="mx-auto" style="width: 20px;
+				  margin-top: 10px;"/>
+     			 </div>
+     			 			
+     			 
+     			  </section>
+        <!-- Projects-->
+       
+        <!-- Signup-->
+     
+        <!-- Contact-->
+        <section class="contact-section" id="contact" style="background: #0D0E14;margin-top: 20px;">
+            <div class="container px-4 px-lg-5">
+              <img src="assets/img/mobile/logo_mob_footer.png" style="width: 73px;margin-bottom: 20px;margin-left: 10px;"/>
+			    <a  class="box-item hover" href="recruit.html" >
+			<div>Social Recruitment</div>
+			 <img src="assets/img/mobile/ic_mob_footer.png" style="width: 24px;"/>
+			 </a>
+			<!--  <div class="box-item hover">
+							   <div>社会招聘</div>
+							   <img src="assets/img/mobile/ic_mob_footer.png" style="width: 24px;"/>
+			  </div> -->
+			   <a class="box-item hover" href="recruit.html">
+								<div>School Recruitment</div>
+								<img src="assets/img/mobile/ic_mob_footer.png" style="width: 24px;"/>
+							</a>
+							 <a class="box-item hover" href="cooperation.html" style="">
+								 <div>Contact Us</div>
+								 <img src="assets/img/mobile/ic_mob_footer.png" style="width: 24px;"/>
+							 </a>
+							 <a class="box-item hover" href="privacy.html" style="">
+							 					 <div>Privacy Policy</div>
+							 					 <img src="assets/img/mobile/ic_mob_footer.png" style="width: 24px;"/>
+							 </a>
+							 <a class="box-item hover" href="xieyi.html" style="border-bottom: 1px solid rgba(255,255,255,0.5);;">
+							 					 <div>User Service Agreement</div>
+							 					 <img src="assets/img/mobile/ic_mob_footer.png" style="width: 24px;"/>
+							 </a>
+            </div>
+        </section>
+        <!-- Footer-->
+	<div style="background: #0D0E14;margin-bottom: 80px;display: flex;flex-direction: column;justify-content: center;height: 258px;">
+		<div class=" footer-text">Room 1001, Oriental  Plaza, Futian District, Shenzhen, Guangdong, China</div>
+		 <div class=" footer-text">bussiness@yffun.com</div>
+	
+	<a  href="http://beian.miit.gov.cn" class=" footer-text">ICP Registration No.粤ICP备2021108369号</a>
+		<div style="display: flex;align-items: center;padding:30px 30px 30px 30px;">
+			<img src="assets/img/mobile/wechat_mob_footer.png" style="margin-right: 40px;height: 22px;"/>
+			
+			<img src="assets/img/mobile/instagram_mob_footer.png" style="margin-right: 40px;height: 24px;"/>
+			<img src="assets/img/mobile/facebook_mob_footer.png" style="margin-right: 40px;height: 23px;"/>
+			<img src="assets/img/mobile/twitter_mob_footer.png" style="margin-right: 40px;height: 22px;"/>
+		</div>
+</div>
+</div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
